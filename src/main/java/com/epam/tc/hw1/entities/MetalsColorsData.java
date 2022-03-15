@@ -1,11 +1,18 @@
 package com.epam.tc.hw1.entities;
 
 import com.jdiai.tools.DataClass;
+import java.util.List;
 
 public class MetalsColorsData extends DataClass<MetalsColorsData> {
-    public String[] summary;
-    public String[] elements;
+
+    public List<String> summary;
+
+    public List<String> elements;
+
     public String color;
+
     public String metals;
-    public String[] vegetables;
+
+    public List<String> vegetables;
+
 }

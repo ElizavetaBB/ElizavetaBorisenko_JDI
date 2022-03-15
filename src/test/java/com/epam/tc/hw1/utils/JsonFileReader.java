@@ -18,4 +18,5 @@ public class JsonFileReader {
         Reader reader = new FileReader(path);
         return gson.fromJson(reader, jsonMapType);
     }
+
 }

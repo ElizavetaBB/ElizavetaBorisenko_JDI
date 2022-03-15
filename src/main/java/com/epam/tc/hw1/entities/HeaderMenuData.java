@@ -1,6 +1,7 @@
 package com.epam.tc.hw1.entities;
 
 public enum HeaderMenuData {
+
     HOME("Home"),
     CONTACT_FORM("Contact form"),
     SERVICE("Service"),
@@ -15,4 +16,5 @@ public enum HeaderMenuData {
     public String getHeaderItem() {
         return headerItem;
     }
+
 }

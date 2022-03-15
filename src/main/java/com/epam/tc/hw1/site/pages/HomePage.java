@@ -40,4 +40,5 @@ public class HomePage extends WebPage {
     public void openMetalsAndColorsPage(final HeaderMenuData menuItem) {
         headerMenu.select(menuItem.getHeaderItem());
     }
+
 }

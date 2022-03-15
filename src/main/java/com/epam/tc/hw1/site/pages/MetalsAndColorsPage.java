@@ -23,8 +23,8 @@ public class MetalsAndColorsPage extends WebPage {
         metalsAndColorsForm.submit();
     }
 
-    public String getResultPanel() {
-        return resultPanel.getDescription();
+    public ResultPanel getResultPanel() {
+        return resultPanel;
     }
 
 }

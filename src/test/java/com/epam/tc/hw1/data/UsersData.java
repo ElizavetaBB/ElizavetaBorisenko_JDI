@@ -9,4 +9,5 @@ public class UsersData {
         u.password = "Jdi1234";
         u.username = "ROMAN IOVLEV";
     });
+
 }

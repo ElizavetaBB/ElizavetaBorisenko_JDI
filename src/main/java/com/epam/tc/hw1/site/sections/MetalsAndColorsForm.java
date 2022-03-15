@@ -46,14 +46,14 @@ public class MetalsAndColorsForm extends Form<MetalsColorsData> {
     private Button submit;
 
     public void fillForm(MetalsColorsData metalsColorsData) {
-        summaryOdd.select(metalsColorsData.summary[0]);
-        summaryEven.select(metalsColorsData.summary[1]);
-        elementsChecklist.select(metalsColorsData.elements);
+        summaryOdd.select(metalsColorsData.summary.get(0));
+        summaryEven.select(metalsColorsData.summary.get(1));
+        elementsChecklist.select(metalsColorsData.elements.toArray(String[]::new));
         colors.select(metalsColorsData.color);
         metals.select(metalsColorsData.metals);
         saladButton.click();
         vegetables.select(vegetables.value().getText()); // unselect "Vegetables"
-        vegetables.select(metalsColorsData.vegetables);
+        vegetables.select(metalsColorsData.vegetables.toArray(String[]::new));
     }
 
 }

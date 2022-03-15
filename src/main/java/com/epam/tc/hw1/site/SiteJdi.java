@@ -8,9 +8,11 @@ import com.epam.tc.hw1.site.pages.MetalsAndColorsPage;
 public class SiteJdi {
 
     public static HomePage homePage;
+
     public static MetalsAndColorsPage metalsAndColorsPage;
 
     public static void open() {
         homePage.open();
     }
+
 }

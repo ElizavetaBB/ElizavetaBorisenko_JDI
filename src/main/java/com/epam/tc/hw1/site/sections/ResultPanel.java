@@ -20,11 +20,24 @@ public class ResultPanel {
     @Css(".sal-res")
     private Text vegetables;
 
-    public String getDescription() {
-        return summary.getText() + "\n"
-                + elements.getText() + "\n"
-                + color.getText() + "\n"
-                + metal.getText() + "\n"
-                + vegetables.getText();
+    public Text getSummary() {
+        return summary;
     }
+
+    public Text getElements() {
+        return elements;
+    }
+
+    public Text getColor() {
+        return color;
+    }
+
+    public Text getMetal() {
+        return metal;
+    }
+
+    public Text getVegetables() {
+        return vegetables;
+    }
+
 }

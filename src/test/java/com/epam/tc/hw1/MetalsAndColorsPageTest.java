@@ -1,7 +1,6 @@
 package com.epam.tc.hw1;
 
-import static com.epam.tc.hw1.data.TestData.getExpectedMetalsAndColorsData;
-import static org.assertj.core.api.Assertions.assertThat;
+import static com.epam.tc.hw1.utils.TestUtils.checkResultPanel;
 
 import com.epam.tc.hw1.entities.HeaderMenuData;
 import com.epam.tc.hw1.entities.MetalsColorsData;
@@ -16,10 +15,7 @@ public class MetalsAndColorsPageTest extends TestInit {
         SiteJdi.homePage.openMetalsAndColorsPage(HeaderMenuData.METALS_AND_COLORS);
         SiteJdi.metalsAndColorsPage.checkOpened();
         SiteJdi.metalsAndColorsPage.fillMetalsAndColorsForm(metalsColorsData);
-
-        assertThat(SiteJdi.metalsAndColorsPage.getResultPanel())
-                .as("Test the result panel contains expected rows")
-                .isEqualTo(getExpectedMetalsAndColorsData(metalsColorsData));
+        checkResultPanel(metalsColorsData);
     }
 
 }

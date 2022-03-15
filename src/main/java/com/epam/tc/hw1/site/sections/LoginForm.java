@@ -7,10 +7,14 @@ import com.epam.jdi.light.ui.html.elements.common.TextField;
 import com.epam.tc.hw1.entities.User;
 
 public class LoginForm extends Form<User> {
+
     @Css("#name")
     private TextField login;
+
     @Css("#password")
     private TextField password;
+
     @Css("[type=submit]")
     private Button enter;
+
 }
