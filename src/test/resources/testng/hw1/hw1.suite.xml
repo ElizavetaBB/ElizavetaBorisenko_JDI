@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Jdi HW1">
+    <test name="Jdi HW1 tests">
+        <packages>
+            <package name="com.epam.tc.hw1.*"/>
+        </packages>
+    </test>
+</suite>
